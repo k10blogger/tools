@@ -1,0 +1,27 @@
+#include <windows.h> // include for version info constants
+
+//VERSIONINFO
+
+1 VERSIONINFO
+FILEVERSION {{ fileversion_t }}
+FILETYPE VFT_APP
+{
+	BLOCK "StringFileInfo"
+	{
+		BLOCK "080904E4"
+		{
+			VALUE "CompanyName", "{{ companyname_t }}"
+			VALUE "FileDescription", "{{ filedescription_t }}"
+			VALUE "InternalName", "{{ internalname_t }}"
+			VALUE "LegalCopyright", "{{ legalcopyright_t }}"
+			VALUE "LegalTrademarks", "{{ legaltrademark_t }}"
+			VALUE "OriginalFilename", "{{ originalfilename_t }}"
+			VALUE "ProductName", "{{ productname_t }}"
+			VALUE "ProductVersion", "{{ productversion_t }}"
+		}
+	}
+	BLOCK "VarFileInfo"
+	{
+		VALUE "Translation", 0x0809, 1252
+	}
+}
