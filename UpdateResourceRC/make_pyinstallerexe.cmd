@@ -1,1 +1,1 @@
-pyinstaller --onefile resource.py
+pyinstaller resource.spec

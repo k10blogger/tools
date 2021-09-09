@@ -39,7 +39,7 @@ def addArgs():
     helpmsg = "Input complete file path for template"
     parser.add_argument("-i", "--InputTemplate", help=helpmsg)
     helpmsg = "Output file name and path for rc file"
-    parser.add_argument("-i", "--OutputFileNameWithPath", help=helpmsg)
+    parser.add_argument("-o", "--OutputFileNameWithPath", help=helpmsg)
     return parser
 
 def getTemplate(templatefilepath):
